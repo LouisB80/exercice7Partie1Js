@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercice_7</title>
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <form>
+    <label for="shoeSize">Pointure : </label><input type="text" id="shoeSize" name="shoeSize"/><br/>
+    <label for="yearOfBirth">Année de naissance : </label><input type="text" id="yearOfBirth" name="yearOfBirth"/><br/>
+    <button id="submit" onclick="nimp()" name="submit">Valider</button>
+  </form>
+  <script type="text/javascript">
+  var shoeSize, yearOfBirth;
+  function nimp()
+  {
+    var result;
+    shoeSize = document.getElementById('shoeSize').value;
+    yearOfBirth = document.getElementById('yearOfBirth').value;
+    result = (shoeSize * 2 + 5) * 50 - yearOfBirth + 1766;
+    alert(result);
+  }
+  </script>
+</body>
+</html>
